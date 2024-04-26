@@ -22,6 +22,6 @@ public class Main {
         Bag hasInvitationBag = new Bag(new Invitation(), 100L);
         Audience hasInvitationAudience = new Audience(hasInvitationBag);
         theater.enter(hasInvitationAudience);
-        System.out.println("ticketOffice sales = " + ticketOffice.getAmount());
+        System.out.println("ticketOffice sales= " + ticketOffice.getAmount());
     }
 }

@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * 티켓 판매원 도메인 오브젝트 클래스
+ */
 public class TicketSeller {
     private TicketOffice ticketOffice;
 
