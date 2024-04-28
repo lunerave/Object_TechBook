@@ -6,9 +6,13 @@ public class Main {
     public static void main(String[] args) {
         Ticket ticket1 = new Ticket();
         Ticket ticket2 = new Ticket();
-        
-        ticket1.setFee(100L);
+        Ticket ticket3 = new Ticket();
+
+        ticket1.setFee(50L);
         ticket2.setFee(100L);
+
+        System.out.println("ticket1 = " + ticket1.getFee());
+        System.out.println("ticket2 = " + ticket2.getFee());
 
         TicketOffice ticketOffice = new TicketOffice(0L, ticket1, ticket2);
         TicketSeller ticketSeller = new TicketSeller(ticketOffice);
