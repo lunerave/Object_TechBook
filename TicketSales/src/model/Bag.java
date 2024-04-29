@@ -27,6 +27,17 @@ public class Bag {
         this(null, amount);
     }
 
+    public Long hold(Ticket ticket) {
+        if (hasInvitation()) {
+            setTicket(ticket);
+            return 0L;
+        } else {
+            setTicket(ticket);
+            minusAmount(ticket.getFee());
+            return ticket.getFee();
+        }
+    }
+
     /**
      * 초대장 소유 여부를 나탄낸다.
      * @return 초대장 소유 여부
