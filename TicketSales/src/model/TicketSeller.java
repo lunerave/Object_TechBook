@@ -14,6 +14,10 @@ public class TicketSeller {
 //        return ticketOffice;
 //    }
 
+    /**
+     * Ticket 판매 혹은 Ticket 교환
+     * @param audience
+     */
     public void sellTo(Audience audience) {
         ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
     }

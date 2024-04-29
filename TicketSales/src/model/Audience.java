@@ -15,6 +15,11 @@ public class Audience {
 //        return bag;
 //    }
 
+    /**
+     * Ticket 구매 혹은 교환
+     * @param ticket
+     * @return 구매 혹은 교환에 사용한 비용
+     */
     public Long buy(Ticket ticket) {
         return bag.hold(ticket);
     }

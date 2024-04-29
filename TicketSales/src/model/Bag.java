@@ -27,6 +27,11 @@ public class Bag {
         this(null, amount);
     }
 
+    /**
+     * 초대권 소지 여부 판별 후, Ticket 교환
+     * @param ticket
+     * @return 티켓 교환 값
+     */
     public Long hold(Ticket ticket) {
         if (hasInvitation()) {
             setTicket(ticket);
